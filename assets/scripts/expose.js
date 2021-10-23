@@ -38,8 +38,8 @@ function init() {
   button.addEventListener("click", (event) => {
     button.onclick = audio.play();
 
-    if (selected === "party-horn") {
-      jsConfetti.addConfetti();
+    if (selected === "party-horn" && level != 0) {
+      jsConfetti.addConfetti(); //Only add confetti when horn not muted and party horn selected.
     }
   });
 
