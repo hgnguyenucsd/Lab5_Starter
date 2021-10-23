@@ -17,7 +17,8 @@ function init() {
 
   // For volume control icon and actual volume level.
   const volume_icon = document.querySelector("#volume-controls > img");
-  let level = 50;
+  const volume = document.getElementById("volume");
+  let level = volume.value;
 
   // Event Listener for setting the correct image and audio upon selection.
   selectHorn.addEventListener("change", (event) => {
